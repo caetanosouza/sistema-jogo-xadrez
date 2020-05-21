@@ -20,7 +20,7 @@ namespace xadrez {
 
             Posicao pos = new Posicao(0, 0);
 
-            // acima
+            // norte
             pos.definirValores(posicao.linha - 1, posicao.coluna);
             while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
@@ -30,7 +30,7 @@ namespace xadrez {
                 pos.linha = pos.linha - 1;
             }
 
-            // abaixo
+            // sul
             pos.definirValores(posicao.linha + 1, posicao.coluna);
             while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
@@ -40,7 +40,7 @@ namespace xadrez {
                 pos.linha = pos.linha + 1;
             }
 
-            // direita
+            // leste
             pos.definirValores(posicao.linha, posicao.coluna + 1);
             while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
@@ -50,7 +50,7 @@ namespace xadrez {
                 pos.coluna = pos.coluna + 1;
             }
 
-            // esquerda
+            // oeste
             pos.definirValores(posicao.linha, posicao.coluna - 1);
             while (tab.posicaoValida(pos) && podeMover(pos)) {
                 mat[pos.linha, pos.coluna] = true;
