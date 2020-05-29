@@ -1,5 +1,3 @@
-using xadrez;
-
 namespace tabuleiro
 {
     abstract class Peca
