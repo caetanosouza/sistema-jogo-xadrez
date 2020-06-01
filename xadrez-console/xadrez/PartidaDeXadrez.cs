@@ -141,7 +141,7 @@ namespace xadrez
 
             Peca p = tab.peca(destino);
             
-            //jogadaespecial promocao
+            //#jogadaespecial promocao
             if (p is Peao)
             {
                 if (p.cor == Cor.Branca && destino.linha == 0 || p.cor == Cor.Preta && destino.linha == 7)
